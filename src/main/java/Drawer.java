@@ -4,12 +4,12 @@ import java.util.List;
 public class Drawer {
     private Code code;
     private double price;
-    private List<Product> product;
+    private List<Product> products;
 
-    public Drawer(Code code, double price, Product  product){
+    public Drawer(Code code, double price ){
         this.code = code;
         this.price = price;
-        this.product = new ArrayList<Product>();
+        this.products = new ArrayList<Product>();
     }
 
     public Code getCode() {
@@ -28,15 +28,19 @@ public class Drawer {
         this.price = price;
     }
 
-    public void setProduct(List<Product> product) {
-        this.product = product;
-    }
 
     public void addProduct(Product product){
-        this.product.add(product);
+        this.products.add(product);
     }
 
-    public List<Product> getProduct() {
+    public List<Product> getProducts() {
+        return this.products;
+    }
+
+    public Product extractProduct() {
+        Product product = this.products.get(0);
+        this.products.remove(0);
+
         return product;
     }
 }
