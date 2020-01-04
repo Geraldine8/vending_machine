@@ -59,4 +59,16 @@ public class VendingMachine {
         return total;
     }
 
+    public List<Coin> convertChangeToCoin(double changeOwed){
+        List<Coin> coinsToReturn = new ArrayList<>();
+        while(changeOwed > 0) {
+            for (Coin coin : coins){
+                if (changeOwed >= coin.getValueFromCoin()) {
+                   coinsToReturn.add(coin);
+                }
+            }
+        }
+        return coinsToReturn;
+    }
+
 }
