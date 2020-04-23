@@ -1,3 +1,5 @@
+package com.codeclan.example.vending_machine.models;
+
 import java.util.ArrayList;
 import java.util.List;
 

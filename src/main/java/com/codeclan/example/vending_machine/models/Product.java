@@ -1,3 +1,5 @@
+package com.codeclan.example.vending_machine.models;
+
 public abstract class Product {
 
     private String name;

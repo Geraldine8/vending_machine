@@ -1,3 +1,5 @@
+package com.codeclan.example.vending_machine.models;
+
 public enum CoinType {
     ONE_PENCE_COIN(0.01),//invalid
     TWO_PENCE_COIN(0.02),//invalid

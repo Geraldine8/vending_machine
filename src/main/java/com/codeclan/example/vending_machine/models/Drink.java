@@ -1,3 +1,5 @@
+package com.codeclan.example.vending_machine.models;
+
 public class Drink extends Product {
 
     public Drink(String name, String brand){

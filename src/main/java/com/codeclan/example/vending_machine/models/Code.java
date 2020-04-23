@@ -1,3 +1,5 @@
+package com.codeclan.example.vending_machine.models;
+
 public enum Code {
     A1,
     A2,

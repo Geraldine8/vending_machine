@@ -27,5 +27,5 @@ target/
 /.nb-gradle/
 build/
 
-### VS Code ###
+### VS com.codeclan.example.vending_machine.models.Code ###
 .vscode/
